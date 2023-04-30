@@ -1,0 +1,52 @@
+.header {
+  padding: 15px;
+  background: var(--gradientPretoAzulEscuro);
+}
+
+/* #region Logo e Nav */
+.containerNavLogo {
+  width: 100%;
+}
+.logoHeader {
+  width: 180px;
+  height: 50px;
+}
+.containerNav > ul {
+  margin: 0;
+  list-style: none;
+}
+.btnNav {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: color .2s ease-in,
+              border .2s ease-in;
+}
+.btnNav:hover {
+  color: var(--rosaPrincipal);
+  border-bottom: 1px solid var(--rosaPrincipal);
+}
+/* #endregion */
+
+
+/* #region Btns login */
+.containerBtnsLogin {
+  gap: 20px;
+}
+
+.containerBtnsLogin > button {
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.btnInscreva {
+  color: var(--rosaPrincipal);
+  border: 1px solid var(--rosaPrincipal);
+  width: 150px;
+}
+.btnLogin {
+  width: 100px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+/* #endregion */

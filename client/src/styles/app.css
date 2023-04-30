@@ -1,0 +1,32 @@
+:root {
+  --azulPrincipal: #4A0FF6;
+  --rosaPrincipal: #FF00FD;
+  --gradientRoxoAzul: linear-gradient(90deg, rgba(184,11,242,1) 0%, rgba(74,15,246,1) 100%);
+  --gradientAzulAzulClaro: linear-gradient(90deg, rgba(30,12,86,1) 0%, rgba(74,15,246,1) 100%);
+  --gradientRosaRosaClaro: linear-gradient(90deg, rgba(101,0,100,1) 0%, rgba(247,3,245,1) 100%);
+  --gradientPretoAzulEscuro: linear-gradient(90deg, rgba(13,10,49,1) 0%, rgba(15,15,17,1) 100%);
+
+  --gradientBackgroundAnimation: linear-gradient(90deg, rgba(30,12,86,1) 0%, rgba(0,0,0,1) 100%);
+}
+body {
+  background: var(--gradientBackgroundAnimation);
+  min-height: 100vh;
+  background-size: 200% 200%;
+  animation: backgroundColor 15s ease-in-out infinite;
+}
+.border {
+  border: 2px solid red;
+}
+
+/* Animacao de fundo do background do body */
+@keyframes backgroundColor {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
