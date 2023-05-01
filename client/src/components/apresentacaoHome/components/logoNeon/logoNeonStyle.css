@@ -1,0 +1,62 @@
+.containerLogo {
+  position: relative;
+}
+.textoSegundo {
+  position: absolute;
+  top: -22vh;
+  left: -7vw;
+  font-size: 22rem;
+  z-index: -1;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 10px;
+  -webkit-text-stroke-color: #b80bf2;
+}
+.logoEvento {
+  width: 50vw;
+  height: 40vh;
+  z-index: 2;
+}
+.onLogoEvento {
+  height: 11.5vh;
+  position: absolute;
+  right: -5px;
+  bottom: 115px;
+  filter:
+    drop-shadow(0px 0px 10px #ff00fd)
+    drop-shadow(0px 0px 20px #ff00fd)
+    drop-shadow(0px 0px 40px #ff00fd)
+    drop-shadow(0px 0px 80px #ff00fd);
+  animation: blinkNeon 8s linear infinite;
+  animation-delay: .1s;
+}
+.onLogoEvento path {
+  animation: changeTextColor 8s linear infinite;
+  animation-delay: .1s;
+}
+
+
+/* #region Keyframes de animacao texto ON */
+@keyframes blinkNeon {
+  0%, 18%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    filter: none;
+    fill: #000;
+  }
+  18.1%, 50%, 60.1%, 65%, 80.1%, 90%, 100% {
+    filter:
+      drop-shadow(0px 0px 10px #ff00fd)
+      drop-shadow(0px 0px 20px #ff00fd)
+      drop-shadow(0px 0px 40px #ff00fd)
+      drop-shadow(0px 0px 80px #ff00fd);
+    fill: #fff;
+  }
+}
+@keyframes changeTextColor {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    fill: #000;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 100% {
+    fill: #fff;
+  }
+}
+/* #endregion */

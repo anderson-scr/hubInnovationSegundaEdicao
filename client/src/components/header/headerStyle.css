@@ -1,6 +1,6 @@
 .header {
   padding: 15px;
-  background: var(--gradientPretoAzulEscuro);
+  background: rgba(0,0,0, .1);
 }
 
 /* #region Logo e Nav */
@@ -38,6 +38,7 @@
   font-weight: 500;
   background-color: transparent;
   border-radius: 5px;
+  height: 35px;
 }
 .btnInscreva {
   color: var(--rosaPrincipal);

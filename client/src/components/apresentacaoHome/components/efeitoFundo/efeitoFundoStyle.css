@@ -1,0 +1,147 @@
+/* #region Quadrados */
+.quadradoPreenchido {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: var(--azulPrincipal);
+  border-radius: 10px;
+}
+.quadradoOutline {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--rosaPrincipal);
+  border-radius: 10px;
+}
+/* #endregion */
+
+/* #region Triangulos */
+.trianguloPreenchido {
+  border-bottom: 50px solid var(--rosaPrincipal);
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+}
+/* #endregion */
+
+/* #region Posicionamento dos Quadrados */
+.qp1 {
+  bottom: 20%;
+  left: 5%;
+}
+.qp2 {
+  bottom: 24%;
+  left: 9%;
+}
+.qp3 {
+  top: 40%;
+  left: 4%;
+}
+.qp4 {
+  top: 5%;
+  left: 3%;
+}
+.qp5 {
+  top: 24%;
+  left: 13%;
+}
+.qp6 {
+  top: 32%;
+  right: 39%;
+}
+.qp7 {
+  left: 40%;
+  top: -1%;
+}
+.qp8 {
+  bottom: 2%;
+  right: 33%;
+}
+.qp9 {
+  bottom: 35%;
+  left: 23%;
+}
+.qp10 {
+  left: 23%;
+  top: 28%;
+}
+.qp11 {
+  right: 23%;
+  top: 28%;
+}
+.qp12 {
+  right: 33%;
+  bottom: 23%;
+}
+.qp13 {
+  right: 4%;
+  top: 9%;
+}
+.qp14 {
+  right: 5%;
+  bottom: 32%;
+}
+.qp15 {
+  right: 48%;
+  top: 10%;
+}
+
+.qo1 {
+  top: 35%;
+  right: 13%;
+}
+.qo2 {
+  bottom: 13%;
+  left: 37%;
+}
+.qo3 {
+  right: 16%;
+  bottom: 20%;
+}
+.qo4 {
+  top: 8%;
+  left: 30%;
+}
+.qo5 {
+  top: 45%;
+  left: 13%;
+}
+.qo6 {
+  right: 40%;
+  top: 7%;
+}
+.qo7 {
+  bottom: 7%;
+  left: 8%;
+}
+.qo8 {
+  left: 11%;
+  top: 13%;
+}
+.qo9 {
+  right: 23%;
+  top: 13%;
+}
+.qo10 {
+  bottom: 5%;
+  right: 13%;
+}
+/* #endregion */
+
+
+/* #region Profundidade dos quadrados */
+.profundidadeAlta {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  opacity: .15;
+}
+.profundidadeMedia {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  opacity: .35;
+}
+.profundidadeBaixa {
+  opacity: .55;
+}
+/* #endregion */
