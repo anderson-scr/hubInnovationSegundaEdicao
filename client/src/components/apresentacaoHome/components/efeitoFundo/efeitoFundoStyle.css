@@ -127,7 +127,6 @@
 }
 /* #endregion */
 
-
 /* #region Profundidade dos quadrados */
 .profundidadeAlta {
   width: 40px;
@@ -143,5 +142,22 @@
 }
 .profundidadeBaixa {
   opacity: .55;
+}
+/* #endregion */
+
+/* #region Animacao flutuacao */
+.quadradoPreenchido, .quadradoOutline {
+  animation: float 3s infinite ease-in-out alternate;
+  -webkit-animation: float 3s infinite ease-in-out alternate;
+}
+
+@keyframes float {
+  100% {
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+  }
 }
 /* #endregion */
