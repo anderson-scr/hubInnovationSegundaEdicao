@@ -4,7 +4,6 @@ import './apresentacaoHomeStyle.css'
 // Components
 import EfeitoFundo from './components/efeitoFundo/efeitoFundo'
 import LogoNeon from './components/logoNeon/logoNeon'
-import Contador from "./components/contador/contador"
 
 const ApresentacaoHome = () => {
   return (
@@ -12,11 +11,8 @@ const ApresentacaoHome = () => {
       <div className='containerEfeitoFundo'>
         <EfeitoFundo />
       </div>
-      <div className='containerTexto'>
+      <div className='containerTexto border'>
         <LogoNeon />
-      </div>
-      <div className='containerContador'>
-        <Contador />
       </div>
     </div>
   )

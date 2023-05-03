@@ -1,6 +1,6 @@
 .containerApresentacaoHome {
   position: relative;
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,6 @@
   left: 0;
 }
 .containerContador {
-  margin-top: 130vh;
   width: 90%;
   display: flex;
   justify-content: space-evenly;

@@ -6,8 +6,8 @@ const EfeitoFundo = () => {
     document.querySelectorAll(".quadradoPreenchido, .quadradoOutline").forEach(quadrado => {
       const valorMovimento = quadrado.getAttribute("data-multiplicador")
 
-      const x = evt.clientX * valorMovimento / 400
-      const y = evt.clientY * valorMovimento / 350
+      const x = evt.clientX * valorMovimento / 200
+      const y = evt.clientY * valorMovimento / 250
       quadrado.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
   }
