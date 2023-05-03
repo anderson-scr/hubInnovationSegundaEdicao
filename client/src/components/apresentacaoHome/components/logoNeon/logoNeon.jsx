@@ -1,7 +1,7 @@
 import React from 'react'
 import './logoNeonStyle.css'
-import logo from '../../../../assets/logoSemEfeitoSemSlogan.svg'
-import {ReactComponent as OnLogo} from '../../../../assets/onLogo.svg'
+import logo from 'assets/logoSemEfeitoSemSlogan.svg'
+import {ReactComponent as OnLogo} from 'assets/onLogo.svg'
 
 const LogoNeon = () => {
   return (

@@ -1,0 +1,72 @@
+.containerNumero {
+  height: 340px;
+  width: 160px;
+  min-width: 3;
+  position: relative;
+}
+.ladoNumero {
+  position: absolute;
+  width: 130px;
+}
+.ladoNumero path {
+  fill: #fff;
+}
+.noventaGraus {
+  transform: rotate(90deg);
+}
+
+/* #region Posicionamento lados do numero do relógio */
+.celulaSuperior {
+  top: 15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.celulaSuperiorEsquerda {
+  top: 85px;
+  left: -60px;
+}
+.celulaSuperiorDireita {
+  top: 85px;
+  right: -60px;
+}
+.celulaCentro {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.celulaInferiorEsquerda {
+  bottom: 85px;
+  left: -60px;
+}
+.celulaInferiorDireita {
+  bottom: 85px;
+  right: -60px;
+}
+.celulaInferior {
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+/* #endregion */
+
+/* #region Dois pontos */
+.containerDoisPontos {
+  height: 340px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ponto {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+/* #endregion */

@@ -1,5 +1,5 @@
 import React from 'react'
-import logoHubHeader from '../../assets/logoSemEfeitoSemSlogan.png'
+import logoHubHeader from 'assets/logoSemEfeitoSemSlogan.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './headerStyle.css'
 

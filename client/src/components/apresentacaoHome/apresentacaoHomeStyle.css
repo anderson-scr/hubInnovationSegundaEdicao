@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .containerEfeitoFundo {
   height: 90vh;
@@ -14,4 +15,10 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+.containerContador {
+  margin-top: 130vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
 }
