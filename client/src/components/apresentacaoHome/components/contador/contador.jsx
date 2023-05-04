@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './contadorStyle.css'
 import Numero from "./numero"
 
 const Contador = () => {
-  const [tempoAtual, setTempoAtual] = useState({
-    'dias': [0, 0],
-    'horas': [0, 0],
-    'minutos': [0, 0],
-    'segundos': [0, 0]
-  });
+  const effectOnce = useRef(true)
+  
+  const [days, setDays] = useState()
+  const [hours, setHours] = useState()
+  const [minutes, setMinutes] = useState()
+  const [seconds, setSeconds] = useState()
+  
   const referenciaNumeros = {
     1: [0, 0, 1, 0, 0, 1, 0],
     2: [1, 0, 1, 1, 1, 0, 1],
@@ -21,57 +22,66 @@ const Contador = () => {
     9: [1, 1, 1, 1, 0, 1, 0],
     0: [0, 0, 0, 0, 0, 0, 0]
   }
-  useEffect(() => {
+
+  const calcularTempo = () => {
     const dataEvento = new Date(`Jun 20, 2023 00:00:00`).getTime() 
-
-    const setTimer = setInterval(() => {
+  
+    setInterval(() => {
       const curTime = new Date().getTime()
-      const tempoAteEvento = dataEvento -  curTime
+      const tempoAteEvento = dataEvento - curTime
       
-      const dias = Math.floor(tempoAteEvento / (1000 * 60 * 60 * 24)).toString()
-      const horas = Math.floor((tempoAteEvento % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString()
-      const minutos = Math.floor((tempoAteEvento % (1000 * 60 * 60)) / (1000 * 60)).toString()
-      const segundos = Math.floor((tempoAteEvento % (1000 * 60)) / 1000).toString()
-
-      const novoValor = {
-        'dias': [dias[0], dias[1]],
-        'horas': [horas[0], horas[1]],
-        'minutos': [minutos[0], minutos[1]],
-        'segundos': [segundos[0], segundos[1]]
-      }
-      setTempoAtual(novoValor)
-      console.log(tempoAtual)
+      const dias = Math.floor(tempoAteEvento / (1000 * 60 * 60 * 24)).toString().padStart(2, '0')
+      const horas = Math.floor((tempoAteEvento % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0')
+      const minutos = Math.floor((tempoAteEvento % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0')
+      const segundos = Math.floor((tempoAteEvento % (1000 * 60)) / 1000).toString().padStart(2, '0')
+      
+      setDays(dias)
+      setHours(horas)
+      setMinutes(minutos)
+      setSeconds(segundos)
     }, 1000)
+  }
+
+  useEffect(() => {
+    if(effectOnce.current) {
+      calcularTempo()
+      return () => effectOnce.current = false
+    }
   }, [])
+  useEffect(() => {
+    console.log(`${days}.${hours}.${minutes}.${seconds}`)
+  }, [seconds])
 
   return (
-    <>
-      <Numero numero={referenciaNumeros[tempoAtual.dias[0]]} />
-      <Numero numero={referenciaNumeros[tempoAtual.dias[1]]}/>
+    <> 
+        <div>
+          <Numero numero={referenciaNumeros[days[0]]} />
+          <Numero numero={referenciaNumeros[days[1]]}/>
+    
+          <div className="containerDoisPontos">
+            <div className="ponto"></div>
+            <div className="ponto"></div>
+          </div>
 
-      <div className="containerDoisPontos">
-        <div className="ponto"></div>
-        <div className="ponto"></div>
-      </div>
-
-      <Numero numero={referenciaNumeros[tempoAtual.horas[0]]} />
-      <Numero numero={referenciaNumeros[tempoAtual.horas[1]]} />
-
-      <div className="containerDoisPontos">
-        <div className="ponto"></div>
-        <div className="ponto"></div>
-      </div>
-      
-      <Numero numero={referenciaNumeros[tempoAtual.minutos[0]]}/>
-      <Numero numero={referenciaNumeros[tempoAtual.minutos[1]]}/>
-
-      <div className="containerDoisPontos">
-        <div className="ponto"></div>
-        <div className="ponto"></div>
-      </div>
-
-      <Numero numero={referenciaNumeros[tempoAtual.segundos[0]]}/>
-      <Numero numero={referenciaNumeros[tempoAtual.segundos[1]]}/>
+          <Numero numero={referenciaNumeros[hours[0]]} />
+          <Numero numero={referenciaNumeros[hours[1]]} />
+    
+          <div className="containerDoisPontos">
+            <div className="ponto"></div>
+            <div className="ponto"></div>
+          </div>
+          
+          <Numero numero={referenciaNumeros[minutes[0]]}/>
+          <Numero numero={referenciaNumeros[minutes[1]]}/>
+    
+          <div className="containerDoisPontos">
+            <div className="ponto"></div>
+            <div className="ponto"></div>
+          </div>
+    
+          <Numero numero={referenciaNumeros[seconds[0]]}/>
+          <Numero numero={referenciaNumeros[seconds[1]]}/>
+        </div>
     </>
   )
 }
