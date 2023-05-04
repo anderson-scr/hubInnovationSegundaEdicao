@@ -1,16 +1,16 @@
 import React from "react";
 import { ReactComponent as LadoNumero } from "assets/fundoNumeroRelogio.svg";
 
-const Numero = () => {
+const Numero = ({ numero }) => {
   return (
     <div className="containerNumero">
-      <LadoNumero className="ladoNumero celulaSuperior" />
-      <LadoNumero className="ladoNumero celulaSuperiorEsquerda noventaGraus" />
-      <LadoNumero className="ladoNumero celulaSuperiorDireita noventaGraus" />
-      <LadoNumero className="ladoNumero celulaCentro" />
-      <LadoNumero className="ladoNumero celulaInferiorEsquerda noventaGraus" />
-      <LadoNumero className="ladoNumero celulaInferiorDireita noventaGraus" />
-      <LadoNumero className="ladoNumero celulaInferior" />
+      <LadoNumero className="ladoNumero celulaSuperior" data-ativo="1" />
+      <LadoNumero className="ladoNumero celulaSuperiorEsquerda noventaGraus" data-ativo="1" />
+      <LadoNumero className="ladoNumero celulaSuperiorDireita noventaGraus" data-ativo="1" />
+      <LadoNumero className="ladoNumero celulaCentro" data-ativo="1" />
+      <LadoNumero className="ladoNumero celulaInferiorEsquerda noventaGraus" data-ativo="1" />
+      <LadoNumero className="ladoNumero celulaInferiorDireita noventaGraus" data-ativo="1" />
+      <LadoNumero className="ladoNumero celulaInferior" data-ativo="1" />
     </div>
   );
 };

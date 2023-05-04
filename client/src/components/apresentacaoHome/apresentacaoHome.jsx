@@ -11,7 +11,7 @@ const ApresentacaoHome = () => {
       <div className='containerEfeitoFundo'>
         <EfeitoFundo />
       </div>
-      <div className='containerTexto border'>
+      <div className='containerTexto'>
         <LogoNeon />
       </div>
     </div>

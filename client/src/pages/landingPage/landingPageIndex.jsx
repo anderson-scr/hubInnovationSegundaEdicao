@@ -8,7 +8,9 @@ const LandingPageIndex = () => {
     <>
       <HeaderIndex />
       <ApresentacaoHome />
-      <Contador />
+      <div className='d-flex justify-content-center'>
+        <Contador />
+      </div>
     </>
   )
 }

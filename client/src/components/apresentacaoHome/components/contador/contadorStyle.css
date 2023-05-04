@@ -1,12 +1,13 @@
 .containerNumero {
-  height: 340px;
-  width: 160px;
+  height: 300px;
+  width: 100px;
   min-width: 3;
   position: relative;
+  margin: 0px 10px;
 }
 .ladoNumero {
   position: absolute;
-  width: 130px;
+  width: 90px;
 }
 .ladoNumero path {
   fill: #fff;
@@ -17,18 +18,18 @@
 
 /* #region Posicionamento lados do numero do relógio */
 .celulaSuperior {
-  top: 15px;
+  top: 30px;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
 .celulaSuperiorEsquerda {
-  top: 85px;
-  left: -60px;
+  top: 82px;
+  left: -45px;
 }
 .celulaSuperiorDireita {
-  top: 85px;
-  right: -60px;
+  top: 82px;
+  right: -45px;
 }
 .celulaCentro {
   top: 0;
@@ -38,15 +39,15 @@
   margin: auto;
 }
 .celulaInferiorEsquerda {
-  bottom: 85px;
-  left: -60px;
+  bottom: 82px;
+  left: -45px;
 }
 .celulaInferiorDireita {
-  bottom: 85px;
-  right: -60px;
+  bottom: 82px;
+  right: -45px;
 }
 .celulaInferior {
-  bottom: 15px;
+  bottom: 30px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -64,8 +65,8 @@
 }
 
 .ponto {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   background-color: #fff;
   border-radius: 50%;
 }
