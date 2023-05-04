@@ -20,7 +20,7 @@ const Contador = () => {
     7: [1, 0, 1, 0, 0, 1, 0],
     8: [1, 1, 1, 1, 1, 1, 1],
     9: [1, 1, 1, 1, 0, 1, 0],
-    0: [0, 0, 0, 0, 0, 0, 0]
+    0: [1, 1, 1, 0, 1, 1, 1]
   }
 
   const calcularTempo = () => {
@@ -54,8 +54,9 @@ const Contador = () => {
 
   return (
     <> 
-        <div>
-          <Numero numero={referenciaNumeros[days[0]]} />
+      {days &&
+        <div className='d-flex justify-content-center'>
+          <Numero numero={referenciaNumeros[days[0]]}/>
           <Numero numero={referenciaNumeros[days[1]]}/>
     
           <div className="containerDoisPontos">
@@ -63,8 +64,8 @@ const Contador = () => {
             <div className="ponto"></div>
           </div>
 
-          <Numero numero={referenciaNumeros[hours[0]]} />
-          <Numero numero={referenciaNumeros[hours[1]]} />
+          <Numero numero={referenciaNumeros[hours[0]]}/>
+          <Numero numero={referenciaNumeros[hours[1]]}/>
     
           <div className="containerDoisPontos">
             <div className="ponto"></div>
@@ -82,6 +83,7 @@ const Contador = () => {
           <Numero numero={referenciaNumeros[seconds[0]]}/>
           <Numero numero={referenciaNumeros[seconds[1]]}/>
         </div>
+      }
     </>
   )
 }
