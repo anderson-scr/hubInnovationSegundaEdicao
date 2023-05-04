@@ -54,6 +54,9 @@ const Contador = () => {
 
   return (
     <> 
+      <div className="d-flex justify-content-center">
+        <span className='spanFaltam'>FALTAM</span>
+      </div>
       {days &&
         <div className='d-flex justify-content-center'>
           <Numero numero={referenciaNumeros[days[0]]}/>
