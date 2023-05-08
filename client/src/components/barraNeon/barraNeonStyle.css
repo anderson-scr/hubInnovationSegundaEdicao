@@ -1,0 +1,22 @@
+.pontaBarraNeon {
+  width: 10px;
+  height: 5px;
+  background-color: #a6a6a6;
+}
+.barraNeon {
+  height: 5px;
+}
+.barraNeon[data-corNeon = 'rosa'] {
+  background-color: #ff73ff;
+  box-shadow: 0px 0px 10px #ff00fd,
+               0px 0px 20px #ff00fd,
+               0px 0px 40px #ff00fd,
+               0px 0px 80px #ff00fd;
+}
+.barraNeon[data-corNeon = 'azul'] {
+  background-color: #734fe0;
+  box-shadow: 0px 0px 10px #4A0FF6,
+               0px 0px 20px #4A0FF6,
+               0px 0px 40px #4A0FF6,
+               0px 0px 80px #4A0FF6;
+}
