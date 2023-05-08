@@ -1,13 +1,13 @@
 .containerNumero {
-  height: 300px;
-  width: 100px;
+  height: 270px;
+  width: 70px;
   min-width: 3;
   position: relative;
   margin: 0px 25px;
 }
 .ladoNumero {
   position: absolute;
-  width: 90px;
+  width: 60px;
 }
 .ladoNumero[data-ativo = '1'] path {
   fill: #fff;
@@ -25,28 +25,22 @@
 .noventaGraus {
   transform: rotate(90deg);
 }
-.spanFaltam {
-  font-size: 80px;
-  font-weight: 700;
-  letter-spacing: 7px;
-  display: inline-block;
-  text-align: center;
-}
+
 
 /* #region Posicionamento lados do numero do relógio */
 .celulaSuperior {
-  top: 30px;
+  top: 45px;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
 .celulaSuperiorEsquerda {
   top: 82px;
-  left: -45px;
+  left: -35px;
 }
 .celulaSuperiorDireita {
   top: 82px;
-  right: -45px;
+  right: -35px;
 }
 .celulaCentro {
   top: 0;
@@ -57,14 +51,14 @@
 }
 .celulaInferiorEsquerda {
   bottom: 82px;
-  left: -45px;
+  left: -35px;
 }
 .celulaInferiorDireita {
   bottom: 82px;
-  right: -45px;
+  right: -35px;
 }
 .celulaInferior {
-  bottom: 30px;
+  bottom: 45px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -73,8 +67,8 @@
 
 /* #region Dois pontos */
 .containerDoisPontos {
-  height: 340px;
-  width: 40px;
+  height: 270px;
+  width: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,9 +76,34 @@
 }
 
 .ponto {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-color: #fff;
   border-radius: 50%;
+}
+/* #endregion */
+
+/* #region Palavras do contador */
+.spanFaltam {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  display: inline-block;
+  text-align: center;
+  text-shadow: 0px 0px 10px #ff00fd,
+               0px 0px 20px #ff00fd,
+               0px 0px 40px #ff00fd,
+               0px 0px 80px #ff00fd;
+}
+
+.containerTextoContador {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-shadow: 0px 0px 10px #ff00fd,
+               0px 0px 20px #ff00fd,
+               0px 0px 40px #ff00fd,
+               0px 0px 80px #ff00fd;
 }
 /* #endregion */

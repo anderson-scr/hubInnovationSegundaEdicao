@@ -59,32 +59,53 @@ const Contador = () => {
       </div>
       {days &&
         <div className='d-flex justify-content-center'>
-          <Numero numero={referenciaNumeros[days[0]]}/>
-          <Numero numero={referenciaNumeros[days[1]]}/>
+          <div className="containerTextoContador">
+            <div className="d-flex">
+              <Numero numero={referenciaNumeros[days[0]]}/>
+              <Numero numero={referenciaNumeros[days[1]]}/>
+            </div>
+            DIAS
+          </div>
     
           <div className="containerDoisPontos">
             <div className="ponto"></div>
             <div className="ponto"></div>
           </div>
 
-          <Numero numero={referenciaNumeros[hours[0]]}/>
-          <Numero numero={referenciaNumeros[hours[1]]}/>
+          <div className="containerTextoContador">
+            <div className="d-flex">
+              <Numero numero={referenciaNumeros[hours[0]]}/>
+              <Numero numero={referenciaNumeros[hours[1]]}/>
+            </div>
+            HORAS
+          </div>
+            
     
           <div className="containerDoisPontos">
             <div className="ponto"></div>
             <div className="ponto"></div>
           </div>
           
-          <Numero numero={referenciaNumeros[minutes[0]]}/>
-          <Numero numero={referenciaNumeros[minutes[1]]}/>
+          <div className="containerTextoContador">
+            <div className="d-flex">
+              <Numero numero={referenciaNumeros[minutes[0]]}/>
+              <Numero numero={referenciaNumeros[minutes[1]]}/>
+            </div>
+            MINUTOS
+          </div>
     
           <div className="containerDoisPontos">
             <div className="ponto"></div>
             <div className="ponto"></div>
           </div>
     
-          <Numero numero={referenciaNumeros[seconds[0]]}/>
-          <Numero numero={referenciaNumeros[seconds[1]]}/>
+          <div className="containerTextoContador">
+            <div className="d-flex">
+              <Numero numero={referenciaNumeros[seconds[0]]}/>
+              <Numero numero={referenciaNumeros[seconds[1]]}/>
+            </div>
+            SEGUNDOS
+          </div>
         </div>
       }
     </>

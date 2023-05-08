@@ -10,12 +10,6 @@ const LandingPageIndex = () => {
       <HeaderIndex />
       <ApresentacaoHome />
       <Contador />
-      <div className='containerSpansContador'>
-        <span>DIAS</span>
-        <span>HORAS</span>
-        <span>MINUTOS</span>
-        <span>SEGUNDOS</span>
-      </div>
     </>
   )
 }

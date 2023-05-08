@@ -10,7 +10,6 @@ const LogoNeon = () => {
       <span className='textoSegundo'>2º</span>
       <img className='logoEvento' src={logo} alt="Logo evento" />
       <OnLogo className='onLogoEvento' />
-      {/* <img className='onLogoEvento' src={onLogo} alt="Evento ON" /> */}
     </div>
     </>
   )

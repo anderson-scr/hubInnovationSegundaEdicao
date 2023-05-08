@@ -1,6 +1,7 @@
 .containerApresentacaoHome {
   position: relative;
-  min-height: 65vh;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
