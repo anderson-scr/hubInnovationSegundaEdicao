@@ -1,7 +1,7 @@
 .pontaBarraNeon {
   width: 10px;
   height: 5px;
-  background-color: #a6a6a6;
+  background-color: #333333;
 }
 .barraNeon {
   height: 5px;
@@ -14,9 +14,9 @@
                0px 0px 80px #ff00fd;
 }
 .barraNeon[data-corNeon = 'azul'] {
-  background-color: #734fe0;
+  background-color: #a5baff;
   box-shadow: 0px 0px 10px #4A0FF6,
                0px 0px 20px #4A0FF6,
                0px 0px 40px #4A0FF6,
-               0px 0px 80px #4A0FF6;
+               0px 0px 80px #0f5cf6;
 }
