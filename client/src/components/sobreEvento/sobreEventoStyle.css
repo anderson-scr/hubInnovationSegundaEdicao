@@ -1,9 +1,22 @@
 .containerSobreEvento {
-  margin-top: 150px;
+  margin-top: 60px;
 }
-.tempImgContainer {
-  width: 600px;
-  height: 600px;
+
+.containerImgsSobreEvento {
+  width: 550px;
+  height: 550px;
+  background-color: rgba(0,0,0, .5);
+  border-radius: 15px;
+  border: 1px solid var(--azulPrincipal);
+  box-shadow: 0px 0px 10px #4A0FF6,
+               0px 0px 20px #4A0FF6,
+               0px 0px 40px #4A0FF6,
+               0px 0px 80px #0f5cf6;
+}
+.imgNoticia {
+  width: 530px;
+  height: 480px;
+  margin-left: 20px;
 }
 
 .tituloUltimaEdicao {
@@ -11,4 +24,19 @@
   color: var(--rosaPrincipal);
   letter-spacing: 5px;
   font-weight: 800;
+  margin-bottom: 40px;
+} 
+
+.textoSobreEvento ul {
+  list-style: none;
+  font-size: 24px;
+}
+.textoSobreEvento ul li {
+  margin-top: 45px;
+}
+
+.textoDestaque {
+  color: var(--azulPrincipal);
+  font-weight: 800;
+  font-size: 42px;
 }

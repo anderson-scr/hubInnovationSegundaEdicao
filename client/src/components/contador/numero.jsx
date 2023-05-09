@@ -1,10 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { ReactComponent as LadoNumero } from "assets/fundoNumeroRelogio.svg";
 
 const Numero = ({ numero = 0 }) => {
-  useEffect(() => {
-    console.log(numero)
-  }, [numero])
   
   return (
     <div className="containerNumero">

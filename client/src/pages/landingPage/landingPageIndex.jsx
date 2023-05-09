@@ -6,6 +6,7 @@ import Contador from 'components/contador/contador'
 import SobreEvento from "components/sobreEvento/sobreEvento"
 import BarraNeon from "components/barraNeon/barraNeon"
 import IconesInformacao from "components/iconesInformacao/iconesInformacao"
+import Palestrantes from 'components/palestrantes/palestrantes'
 
 const LandingPageIndex = () => {
   return ( 
@@ -14,10 +15,9 @@ const LandingPageIndex = () => {
       <ApresentacaoHome />
       <Contador />
       <IconesInformacao />
-      <SobreEvento />
-      <div className="d=flex justify-content-evenly mb-5">
-        <BarraNeon corNeon={'azul'}/>
-        <BarraNeon corNeon={'rosa'}/>
+      <div className='containerBackgroundImg'>
+        <SobreEvento />
+        <Palestrantes />
       </div>
     </>
   )

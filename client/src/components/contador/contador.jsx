@@ -24,7 +24,7 @@ const Contador = () => {
   }
 
   const calcularTempo = () => {
-    const dataEvento = new Date(`Jun 20, 2023 00:00:00`).getTime() 
+    const dataEvento = new Date(`Jun 21, 2023 19:00:00`).getTime() 
   
     setInterval(() => {
       const curTime = new Date().getTime()
@@ -48,9 +48,6 @@ const Contador = () => {
       return () => effectOnce.current = false
     }
   }, [])
-  useEffect(() => {
-    console.log(`${days}.${hours}.${minutes}.${seconds}`)
-  }, [seconds])
 
   return (
     <> 

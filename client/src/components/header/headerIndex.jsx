@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logoHubHeader from 'assets/logoSemEfeitoSemSlogan.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './headerStyle.css'
 
 const HeaderIndex = () => {
+  const [navbarColor, setNavbarColor] = useState(false)
+
+  window.addEventListener("scroll", () => {
+    window.scrollY >= 60? setNavbarColor(true) : setNavbarColor(false)
+  })
+
   return (
-    <header className='header'>
+    <header className={navbarColor? 'header background' : 'header'}>
       <div className='container d-flex justify-content-between'>
         <div className='containerNavLogo d-flex align-items-center'>
           <div className='containerLogo'>
